@@ -12,7 +12,7 @@ const fruits = require('./fruits.json');
 console.log("process.env['PORT']:", process.env['PORT']);
 console.log('PORT:', PORT);
 
-app.use(cors);
+app.use(cors());
 app.use(express.json());
 app.use(logger);
 
